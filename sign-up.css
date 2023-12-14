@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: calc(100%-100px);
+    height: fit-content;
+}
+.side-image{
+
+   display: flex;
+   /* width: 200px; */
+   height: 30%; 
+   /* max-width: 200px; */
+   .img{
+    width: 30%;
+    height: 200%;
+   }
+}
+.main-content{
+    flex-direction: row;
+    width: 100px;
+    height: auto;
+    background-color: rgb(95, 95, 95);
+    border-radius: 1px;
+}
