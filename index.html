@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+  display: grid;
+  height: 99vh;
+  grid-template-columns: 1fr 3fr 1fr; /* Three columns, one three times as wide as the others */
+  grid-template-rows: 200px auto 100px; /* Three rows, two with explicit widths */
+  grid-template-areas:
+    "header header header"
+    ". main sidebar"
+    " . footer sidebar";
+}
+
+/*
+  Now, we can explicitly place items in the defined rows and columns.
+*/
+.child-1 {
+  grid-area: header;
+  background-color: bisque;
+}
+
+.child-2 {
+  grid-area: main;
+  background-color: aqua;
+  height: auto;
+}
+
+.child-3 {
+  grid-area: sidebar;
+  height: auto;
+  background-color: brown;
+}
+
+.child-4 {
+    display: flex;
+    bottom: 0%;
+  grid-area: footer;
+  background-color: rgb(106, 106, 106);
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="header child-1">Head </div>
+    <div class="main child-2">Main</div>
+    <div class="sidebar child-3">Sidebar</div>
+    <div class="footer child-4" >Footer</div>
+</div>
+</body>
+</html>
