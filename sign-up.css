@@ -1,33 +1,39 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
+@font-face { 
+  font-family: 'MyFont'; 
+  src: url('images/Norse-Bold.otf') format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
+
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  grid-template-columns:auto auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 15px;
+  height: 100vh;
+  justify-self: center;
+  align-items: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6, #9b59b6);
+}
+.container{
+  display: grid;
+
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 3em;
+}
+p{
+  font-weight: bold;
 }
 
-main{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
-    background-color: aqua;
-    padding: 1em;
-    height: auto;
+header { 
+  font-family: 'MyFont', sans-serif; 
+  text-align: center; 
 }
-
- .side-image{
-  background-color: aquamarine;
-  grid-column: 1 / -1;
-  height: 500px;
-
-}
-img{
-  width: 200px;
-}
-/*
-.main-content{
-    flex-direction: row;
-    width: 100px;
-    height: auto;
-    background-color: rgb(95, 95, 95);
-    border-radius: 1px;
-} */
