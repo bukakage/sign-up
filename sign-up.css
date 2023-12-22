@@ -17,7 +17,7 @@ body{
   row-gap: 15px;
   height: 100vh; */
 
-  background: linear-gradient(135deg, #71b7e6, #9b59b6, #9b59b6);
+  background: #1a1a1a
 }
 .main{
   display: flex;
@@ -65,6 +65,10 @@ header {
 }
 .middle{
   grid-area: middle;
+  padding-bottom: 15px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 35px;
 }
 .bottom{
   grid-area: bottom;
@@ -87,6 +91,36 @@ header {
   background-color: rgb(244, 246, 248);
 }
 .container .title{
-  font-size: px;
+  font-size: 25px;
   font-weight: 500;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .user-details .input-box {
+  margin: 10px 0 6px 0;
+  width: calc(100% /2 -20px);
+  
+}
+
+.user-details .input-box span{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 13px;
 }
