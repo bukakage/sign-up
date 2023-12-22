@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
 
@@ -74,11 +75,22 @@ header {
   grid-area: bottom;
 }
 .top{
+  padding: 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-right: 1vh;
-  padding-top: 20vh;
+  padding-top: 15vh;
   background-color: rgb(244, 246, 248);
+}
+.top p{
+
+  justify-content: center;
+}
+.top .separate {
+  padding-top: 15px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .bottom{
@@ -123,4 +135,25 @@ form .user-details .input-box {
   border: 1px solid #ccc;
   padding-left: 15px;
   font-size: 13px;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+
+}
+
+
+.bottom a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #166b28;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
 }
